@@ -1,7 +1,9 @@
 # ROCKET Algorithm implementation
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
-Implementation of the *RandOm Convolutional KErnel Transform* [ROCKET] published in [arXiv:1910.13051](https://arxiv.org/pdf/1910.13051.pdf) in R language. 
+Implementation of the *RandOm Convolutional KErnel Transform* [ROCKET] published in [arXiv:1910.13051](https://arxiv.org/pdf/1910.13051.pdf) in R language.
+
+This implementation works for all multi-dimensional time series. It also works with time series with partially missing data, since data approximation has been implemented. 
 
 This project is a part of Warsaw University of Technology Machine Learning Course.
 
@@ -18,7 +20,6 @@ The algorithm randomly generates a great variety of convolutional kernels and ex
 - In CNN, Dilation increases exponentially with depth; ROCKET has random dilation values
 - CNNs only have average/max pooling. ROCKET has a unique pooling called as ppv which has proven to provide much better classification accuracy on time series.
 
-## How does it work
+## Important notes
 
-Explanation on how the algorithm work is provided in `about.pdf` file.
-
+ Time series used as example are provided by [timeseriesclassification.com](https://timeseriesclassification.com/dataset.php).
